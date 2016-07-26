@@ -1,0 +1,15 @@
+<h1>CONTRATO PRIVADO DE ALQUILER</h1>
+<p>
+Conste por el presente documento privado de alquiler, que las partes en conformidad, voluntad y aceptación manifiestan el presente acuerdo conforme a las clausulas siguientes:
+PRIMERA.- Dirá Ud. que el Sr. FERNANDO RIVERO, mayor de edad, hábil por ley, boliviano, con C.I. 1546692 SCZ es Propietario del local @LOCAL en “Mercado Multi-tiendas Brisas del Sur” ubicado  en la Av. La Patria No. 2668 de la ciudad de Cochabamba, quien otorga en favor de @INQUILINO con C.I  @CI_INQUILINO .,  hábil en derecho, que para fines del presente documento se denominara como el INQUILINO.
+SEGUNDA.- Al presente en entera conformidad, se otorga en calidad de alquiler el local comercial “@LOCAL” situado en @UBICA, desde el @FECHA_IN, hasta el @FECHA_FIN.  
+TERCERA.- Se determina un canon de alquiler, a ser pagado por adelantado por cada mes de Bs. @ALQUILER.- (@ALQUILER_LITERAL), quedando restante el pago por parte del INQUILINO del consumo de luz eléctrica por el tiempo determinado en el presente contrato. 
+CUARTA.- En calidad de garantía por el local, se establece un depósito de Bs. @GARANTIA (@GARANTIA_LITERAL BOLIVIANOS.-), EL MISMO QUE PODRÁ CUBRIR GASTOS MENORES, en caso de requerirse refacciones. Deposito que será devuelto en su totalidad al INQUILINO al momento de la devolución formal del local, si el mismo no presenta observaciones por parte del PROPIETARIO. 
+QUINTA.- El INQUILINO recibe el bien dado en alquiler en  estado nuevo y en correcto funcionamiento de todas las instalaciones que comprenden el local y, de la misma forma lo devolverá, así mismo la INQUILINA garantiza con todos sus bienes habidos y por haber, la reposición de daños y  cancelaciones de saldos monetarios.
+SEXTA.- Se hace constar que la INQUILINA nó podrá darle otro uso fuera del ámbito comercial propio de sus actividades, además se hace constar que queda prohibido cualquier acción contemplada como delito en las Leyes 1008, 1990 y cualquier otro contrario al orden social (prohibido el consumo de bebidas alcohólicas).
+SEPTIMA.- El presente contrato de alquiler se rescindirá en caso de que se verifique destrucción o mal manejo de los ambientes, el desalojo será inmediato, sin devolución pecuniaria alguna y sin previo requerimiento judicial o extrajudicial.
+OCTAVA.- Cualesquier controversia que se suscitare como emergencia del presente contrato, sea en su interpretación  o ejecución, las partes prorrogan voluntariamente jurisdicción y competencia al personal de Conciliación de turno de la Capital, autoridad que en audiencia inmediata deberá resolver el conflicto, a lo que las partes se obligan a su cumplimiento sin necesidad de interponer recursos y procesos ordinarios.
+En señal de conformidad y aceptación de las clausulas contenidas en el presente documento firman ambas partes, sin perjuicio de que a requisitoria de alguna de las partes, el presente documento sea elevado a instrumento público.
+
+
+Cochabamba,@FECHA_ACTUAL.

@@ -1,0 +1,14 @@
+funcionalidades
+
+	- crear y guardar clientes
+	- generar contratos
+	- control de garantias
+	- control de pago de alquiler
+
+mokup
+	- login
+	- crear cliente
+	- imprimir contrato
+	---------------------------------------------
+	- notificar deuda de alquileres
+	- llevar pagos
