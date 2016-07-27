@@ -40,7 +40,7 @@
 			</header>
             <nav>
                 <ul class="nav nav-pills">
-                  <li role="presentation" class="active"><a href="#">Inicio</a></li>
+                  <li role="presentation" class="active"><a href="<?=base_url()?>user">Inicio</a></li>
                   <li role="presentation"><a href="<?=base_url()?>user">Inquilino</a></li>
                   <li role="presentation"><a href="<?=base_url()?>user/contrat">Lista</a></li>
                 </ul>            

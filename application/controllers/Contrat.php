@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class User extends CI_Controller {
+class Contrat extends CI_Controller {
 
     public function __construct(){
          parent::__construct();
@@ -13,27 +13,18 @@ class User extends CI_Controller {
         echo $this->session->userdata('login');;*/
         
         $this->load->model('user_model');
+        $this->load->model('contrat_model');
     }
 
 	function index()
 	{
-        $data['contrats']=$this->user_model->view();
-        
-                //print_r($data);
-        
-        $fecha=$data['contrats'][0]->fecha_pago."00:00:00";
-        $segundos= strtotime('now') - strtotime($fecha) ;
-        $diferencia_dias=intval($segundos/60/60/24);
-        $data['diferencia_dias']=$diferencia_dias;
-        //if($diferencia_dias)
-        
-        $data['welcome_msg']="Bienvenido:".$this->session->userdata('login');
-        $data['principal']=$this->load->view('user/list_status', $data, true);
+	    $data['welcome_msg']="Bienvenido:".$this->session->userdata('login');
+        $data['principal']=$this->load->view('user/contrat_frm', null, true);
         $this->load->view('template_user', $data);
 	    
     }
     
-    /*function save(){
+    function save(){
         
         $fecha_contrat=date("Y-m-d");
         
@@ -51,6 +42,7 @@ class User extends CI_Controller {
     function contrat(){
         
         $data['contrats']=$this->user_model->view();
+        
         
         $data['welcome_msg']="Bienvenido:".$this->session->userdata('login');
         $data['principal']=$this->load->view('user/list_user', $data, true);
@@ -87,12 +79,41 @@ class User extends CI_Controller {
         return $contrat;
     }
     
+    function pay($id){
+        
+        //$_POST['fecha'.$id]=$date;
+        //recupero la ultima fecha de pago
+        $ultima_fecha=$this->contrat_model->ultima_fecha($id);
+        //recupero la fecha de contrato
+        $fecha_contrato=$this->contrat_model->contrat_fecha($id);
+        // ahora ponemos la fecha como la del contrato sumando un mes a la fecha de ultimo pago
+        //$nuevafecha = strtotime ( '+1 month' , strtotime ( $fecha ) ) ;
+        //$nuevafecha = date ( 'Y-m-j' , $nuevafecha );
+        //echo $ultima_fecha[0]->fecha_pago;
+        //echo $fecha_contrato[0]->fecha_contrato;
+        
+         $fecha_actual=date("Y-m-d");
+        //necesito la fecha del contrato con el mes actual para el pago
+        $fecha_actual_array=explode('-', $fecha_actual);
+        $fecha_contrat_porcion=explode("-", $fecha_contrato[0]->fecha_contrato);
+        //concatenamos la fecha de contrato con el mes actual que es el que se esta pagando para que no varien los dias
+        $fecha_pago_final=$fecha_contrat_porcion[0]."-".$fecha_actual_array[1]."-".$fecha_contrat_porcion[2];
+        //hacemos update de la fecha de pago.
+        $this->contrat_model->pay($id, $fecha_pago_final);
+        //en teoria generamos el recibo para imprecion con dos copias
+        
+        // y ahi muere
+        
+        redirect(base_url()."user");
+        
+    }
+    
     
     function del($id)
     {
         $this->user_model->del($id);
         redirect(base_url()."user/contrat");
-    }*/
+    }
     
 }
 
